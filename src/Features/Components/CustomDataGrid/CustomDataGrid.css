@@ -1,0 +1,112 @@
+/* CustomDataGrid.css */
+
+.table-container {
+  overflow-x: auto;
+  width: 90%; /* Allows horizontal scrolling */
+}
+
+.custom-grid-table {
+  border-collapse: separate;
+  border-spacing: 20px;
+  background-color: #f2f2f2; /* Use collapse to remove spacing between cells */
+}
+
+.custom-grid-table th,
+.custom-grid-table td {
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-grid-table th,
+.custom-grid-table tr:last-child td,
+.custom-grid-table td:first-child,
+.custom-grid-table td:last-child {
+  background-color: #f2f2f2;
+}
+
+.custom-grid-table td {
+  background-color: white;
+}
+
+.custom-grid-table td:nth-child(2),
+.custom-grid-table th:nth-child(2) {
+  font-weight: bold;
+}
+
+.car-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.custom-grid-table td {
+  position: relative;
+}
+
+.custom-grid-table td:hover .delete-icon {
+  display: inline;
+}
+
+.table-container {
+  padding: 20px;
+}
+
+.custom-grid-table {
+  max-width: 500px;
+  width: auto;
+  overflow: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.selectable-image {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.custom-grid-table td:nth-child(2),
+.custom-grid-table th:nth-child(2) {
+  min-width: 250px;
+  width: 250px;
+}
+
+.product-filter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffafa;
+  align-items: center;
+  padding: 20px;
+}
+.product-filter-text {
+  background-color: #15e15b14;
+  padding: 5px;
+  border-radius: 8px;
+}
+
