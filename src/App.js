@@ -1,11 +1,17 @@
 import "./App.css";
-import CustomDataGrid from "./Features/Components/CustomDataGrid/CustomDataGrid";
+import { InputNode } from "./Features/Components/nodes/inputNode";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
+
+import { ReactFlowProvider } from "reactflow";
 
 function App() {
   return (
-    <>
-      <CustomDataGrid />
-    </>
+    <Provider store={store}>
+      <ReactFlowProvider>
+        <InputNode />
+      </ReactFlowProvider>
+    </Provider>
   );
 }
 
