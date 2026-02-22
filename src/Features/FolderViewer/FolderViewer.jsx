@@ -1,7 +1,6 @@
 // FolderViewer.js
 import React, { useState } from "react";
 
-
 // data.js
  const nodes = [
   {
